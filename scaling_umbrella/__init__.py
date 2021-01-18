@@ -1,10 +1,6 @@
-from xml.etree.ElementTree import parse
-
-import defusedxml
+from defusedxml.ElementTree import parse
 
 from scaling_umbrella.BaseReport import BaseReport
-
-defusedxml.defuse_stdlib()
 
 
 def xml_from_file(file_path):
