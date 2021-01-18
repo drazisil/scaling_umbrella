@@ -1,7 +1,5 @@
 from defusedxml.ElementTree import parse
 
-from scaling_umbrella.BaseReport import BaseReport
-
 
 def report_from_file(file_path):
     xml_tree = parse(file_path)
