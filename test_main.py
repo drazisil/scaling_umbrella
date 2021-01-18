@@ -1,6 +1,6 @@
 import defusedxml
 
-from main import xml_from_file
+from scaling_umbrella import xml_from_file
 
 defusedxml.defuse_stdlib()
 

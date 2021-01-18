@@ -1,19 +1,8 @@
 import argparse
-from xml.etree.ElementTree import parse
+
+from scaling_umbrella import xml_from_file
 
 parser = argparse.ArgumentParser()
-
-
-def xml_from_file(file_path):
-    tree = parse(file_path)
-    print(
-        "{} has {} lines.".format(
-            file_path,
-            len(list(tree.find("./packages/package/classes/class/lines"))),
-        )
-    )
-    return tree
-
 
 if __name__ == "__main__":
     parser.add_argument("file1", help="first file to check")
