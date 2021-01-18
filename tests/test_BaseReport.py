@@ -1,4 +1,4 @@
-from scaling_umbrella import BaseReport
+from scaling_umbrella.BaseReport import BaseReport
 
 
 def test_base_report():
