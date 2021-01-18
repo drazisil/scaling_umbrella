@@ -13,5 +13,5 @@ def test_report_from_file_no_lines():
     try:
         r = report_from_file("./fixtures/coverage_no_lines.xml")
         assert False
-    except Exception as e:
+    except ValueError as e:
         assert e.__str__() == "Empty lines object"
